@@ -1,2 +1,143 @@
 # registration-form
 In this repository there is a file/code of registration form...
+[registration form.html](https://github.com/user-attachments/files/29623776/registration.form.html)
+<!DOCTYPE html>
+<html>
+<head>
+    
+ <title>REGISTRATION FORM</title>
+</head>
+
+<body
+ 
+    style="background-color: rgba(216, 216, 214, 0.926);">
+   <!--for page colour-->
+    <form >
+        <!--for form-->
+        <table align="center" width="700" cellpadding="30">
+            <tr>
+                <!--for a single line-->
+                <td colspan="2" align="center">
+                    <h1 style="border:solid #180305; background-color: rgb(239, 237, 234);">REGISTRATION FORM</h1>
+            </tr>
+            <padding:10px;border-radius:10px; background-color: rgb(239, 237, 234);">
+<tr>
+    <td style="font-weight: bold; font-size:14px">Your Name :</td>
+    <td><input type="text" size="20" placeholder="first name "/>
+    <input type="text" size="20" placeholder="Middle name"/>
+    <!--to fetch name of the user-->
+    </td>
+</tr>
+<tr>
+    <td style="font-weight: bold; font-size:14px">Father's Name :</td>
+    <!--fathers name-->
+    <td><input type="text" size="30" placeholder="Father's name"/></td>
+</tr>
+<tr>
+    
+    <td style="font-weight: bold; font-size:14px"> Mother's Name :</td>
+    <!--mothers name-->
+    <td><input type="text" size="30" placeholder="Mother's name"/></td>
+</tr>
+<tr>
+    <!--date of birth-->
+<td style="font-weight: bold;font-size:14px">Date Of Birth :</td>
+<td><input type="date"/></td>
+</tr>
+
+<tr>
+    <!--college name -->
+    <td style="font-weight: bold; font-size:14px">College Name :</td>
+    <td><input type="text" size="30" placeholder="College name"/></td>
+</tr>
+
+<tr>
+    <td style="font-weight: bold; font-size:14px"> Your Department :</td>
+    <td>
+        <!--for selection of department from user-->
+       <select>
+        <option value="" >Department</option>
+           <option>Computer Science</option>
+           <option>Information Technology</option>
+           <option>Electronics and Communication</option>
+           <option>Electrical </option>
+           <option>Mechanical</option>
+           <option>civil    </option>
+           <option>others   </option>
+         </select>
+    </td>
+</tr>
+<tr>
+    <!--for course name-->
+    <td style="font-weight: bold; font-size:14px"> Your Course :</td>
+    <td><input type="text" size="15" placeholder="Course"/>
+
+    </td>
+</tr>
+<!--for current year-->
+<tr>
+<td style="font-weight: bold; font-size:14px">Current Year :</td>
+<td>
+<select>
+    <option value=""> year</option>
+    <option>1st year></option>
+    <option>2nd year></option>  
+    <option>3rd year></option>  
+    <option>4th year></option>
+    <option>5th year></option>
+    <option>6th year></option>
+</select>
+</td>
+</tr>
+
+<tr>
+    <!--for upload photo-->
+<td style="font-weight: bold; font-size:14px ">upload your photo :</td>
+<td><input type="file"/></td>
+</tr>
+<tr>
+<td style="font-weight: bold;font-size:14px">Gender</td>
+<!--to select gender-->
+    <td>
+        <select>
+           <option value="">Gender</option>
+            <option>Male</option>
+              <option>Female</option>
+               <option>Other</option>
+     </td>
+</tr>
+<tr>
+   <!--for mobile number--> 
+    <td style="font-weight: bold; font-size:14px"> Mobile number: </td>
+    <td> <input type="text" size="1" value="+91"/>
+     <input type="text" size="10" placeholder="Mobile number"/></td>
+</tr>
+<tr>
+<!--for email id-->
+    <td style="font-weight: bold; font-size:14px"> Email id :</td>
+    <td><input type="text" size="30" placeholder="Email id"/></td>
+</tr>
+<tr>    
+    <!--for address-->
+    <td>Address :</td>
+    <td><input type="text" size="50" placeholder="Address"/></td>
+</tr>
+<tr>
+    <!--for submit and reset buttons-->
+    <td  colspan="2" align="center">
+        <input type="submit" value="Submit" 
+        style ="background:linear-gradient(to bottom, #007bff, #0056b3); color: white;"/>
+
+        <input type="reset" value="Reset"
+        style ="background:linear-gradient(to bottom, #dc3545, #c82333); color: white;"/>
+    </td>
+</tr>
+
+
+</table>
+
+
+    </form>
+    
+</body>
+</html>
