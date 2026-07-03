@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Registration Form</title>
+  <style>
+
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+
+    .container {
+      display: flex;
+      flex-wrap: wrap; /* allows stacking on small screens */
+      justify-content: center;
+      align-items: flex-start;
+      padding: 20px;
+    }
+
+    .form-section {
+      flex: 1 1 500px; /* flexible width, min 500px */
+      background-color: rgba(204, 204, 106, 0.926);
+      padding: 20px;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .form-section h1 {
+      text-align: center;
+      background-color: #efedeb;
+      border: solid #180305;
+      padding: 10px;
+    }
+
+    .form-section table {
+      width: 100%;
+    }
+
+    .form-section input, 
+    .form-section select {
+      width: 100%;
+      height: 35px;
+      margin: 5px 0;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .form-section input[type="submit"],
+    .form-section input[type="reset"] {
+      width: 45%;
+      height: 45px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .form-section input[type="submit"] {
+      background: linear-gradient(to bottom, #007bff, #0056b3);
+      color: white;
+    }
+
+    .form-section input[type="reset"] {
+      background: linear-gradient(to bottom, #dc3545, #c82333);
+      color: white;
+    }
+
+    .image-section {
+      flex: 1 1 300px; /* flexible width, min 300px */
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image-section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .form-section, .image-section {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Registration Form -->
+    <div class="form-section">
+      <h1>REGISTRATION FORM</h1>
+      <form>
+        <table>
+          <tr>
+            <td><h2>Your Name :</h2></td>
+            <td>
+              <input type="text" placeholder="First name">
+              <input type="text" placeholder="Middle name">
+            </td>
+          </tr>
+          <tr>
+            <td><h2>Father's Name :</h2></td>
+            <td><input type="text" placeholder="Father's name"></td>
+          </tr>
+          <tr>
+            <td><h2>Mother's Name :</h2></td>
+            <td><input type="text" placeholder="Mother's name"></td>
+          </tr>
+          <tr>
+            <td><h2>Date Of Birth :</h2></td>
+            <td><input type="date"></td>
+          </tr>
+          <tr>
+            <td><h2>College Name :</h2></td>
+            <td><input type="text" placeholder="College name"></td>
+          </tr>
+          <tr>
+            <td><h2>Your Department :</h2></td>
+            <td>
+              <select>
+                <option value="">Department</option>
+                <option>Computer Science</option>
+                <option>Information Technology</option>
+                <option>Electronics and Communication</option>
+                <option>Electrical</option>
+                <option>Mechanical</option>
+                <option>Civil</option>
+                <option>Others</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><h2>Your Course :</h2></td>
+            <td><input type="text" placeholder="Course"></td>
+          </tr>
+          <tr>
+            <td><h2>Current Year :</h2></td>
+            <td>
+              <select>
+                <option value="">Year</option>
+                <option>1st year</option>
+                <option>2nd year</option>
+                <option>3rd year</option>
+                <option>4th year</option>
+                <option>5th year</option>
+                <option>6th year</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><h2>Upload your photo :</h2></td>
+            <td><input type="file"></td>
+          </tr>
+          <tr>
+            <td><h2>Gender :</h2></td>
+            <td>
+              <select>
+                <option value="">Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><h2>Mobile number :</h2></td>
+            <td>
+              <input type="text" value="+91" style="width: 25px;">
+              <input type="text" placeholder="Mobile number">
+            </td>
+          </tr>
+          <tr>
+            <td><h2>Email id :</h2></td>
+            <td><input type="email" placeholder="Email id"></td>
+          </tr>
+          <tr>
+            <td><h2>Address :</h2></td>
+            <td><input type="text" placeholder="Address"></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center">
+              <input type="submit" value="Submit">
+              <input type="reset" value="Reset">
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+
+    <!-- Extra space for image -->
+    <div class="image-section">
+      <img src="your-image.jpg" alt="Extra space image">
+    </div>
+  </div>
+</body>
+</html>
